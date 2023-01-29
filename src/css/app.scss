@@ -1,0 +1,26 @@
+// app global css in SCSS form
+// 글자크기
+.text-XL {
+    font-size: 1.6rem;
+}
+
+.text-L {
+    font-size: 1.4rem;
+}
+
+.text-M {
+    font-size: 1.2rem;
+}
+
+.text-S {
+    font-size: 1rem;
+}
+
+.text-XS {
+    font-size: 0.8rem;
+}
+
+// 카드 라운드
+.cardRounded {
+    border-radius: 20px 20px;
+}
