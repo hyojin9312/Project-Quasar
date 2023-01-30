@@ -36,23 +36,65 @@
       content-class="bg-grey-1"
     >
       <q-list>
-        <q-item-label
+        <q-item>
+          <q-item-label
           header
           class="text-grey-8"
-        >
-        <section class="flex justify-around items-center">
-          <q-avatar round><img src="https://cdn.quasar.dev/img/avatar.png" /></q-avatar>
-          <div class="text-h5 ">Menu</div>
-          <div>
-            <q-btn flat disable/>
-          </div>
-        </section>
-        </q-item-label>
-        <EssentialLink
+          >
+          <section class="flex justify-around items-center">
+            <q-avatar round><img src="https://cdn.quasar.dev/img/avatar.png" /></q-avatar>
+            <div class="text-h5 q-pl-sm">Menu</div>
+            <div>
+              <q-btn flat disable/>
+            </div>
+          </section>
+          </q-item-label>
+        </q-item>
+        <q-item clickable v-ripple class="full-width no-padding flex items-center"
+                @click="goToMenu(1)">
+          <q-item-label class="text-M text-weight-bolder full-width q-pa-md">
+            <q-icon name="account_circle" size="sm"/>
+            내정보
+          </q-item-label>
+        </q-item>
+        <q-separator class="full-width "/>
+        <q-item clickable v-ripple class="full-width no-padding flex items-center"
+                @click="goToMenu(2)">
+          <q-item-label class="text-M text-weight-bolder full-width q-pa-md">
+            <q-icon name="notifications" size="sm"/>
+            공지
+          </q-item-label>
+        </q-item>
+        <q-separator class="full-width"/>
+        <q-item clickable v-ripple class="full-width no-padding flex items-center"
+                @click="goToMenu(3)">
+          <q-item-label class="text-M text-weight-bolder full-width q-pa-md">
+            <q-icon name="work_outline" size="sm"/>
+            내서류
+          </q-item-label>
+        </q-item>
+        <q-separator class="full-width"/>
+        <q-item clickable v-ripple class="full-width no-padding flex items-center"
+                @click="goToMenu(4)">
+          <q-item-label class="text-M text-weight-bolder full-width q-pa-md">
+            <q-icon name="alarm" size="sm"/>
+            알림
+          </q-item-label>
+        </q-item>
+        <q-separator class="full-width"/>
+        <q-item clickable v-ripple class="full-width no-padding flex items-center"
+                @click="goToMenu(5)">
+          <q-item-label class="text-M text-weight-bolder full-width q-pa-md">
+            <q-icon name="tv" size="sm"/>
+            TV
+          </q-item-label>
+        </q-item>
+        <q-separator class="full-width"/>
+        <!-- <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
-        />
+        /> -->
       </q-list>
     </q-drawer>
 
@@ -136,6 +178,27 @@ export default {
     //설정페이지 이동
     goToSetting(){
       this.$router.push({name:'setting', params: {title: '설정'}});
+    },
+
+    //메뉴 페이지 이동
+    goToMenu(type){
+      switch(type){
+        case 1:
+          this.$router.push({name: 'myinfo', params: {title:'내정보'}});
+          break;
+        case 2:
+          this.$router.push({name: 'notice', params: {title:'공지'}});
+          break;
+        case 3:
+          this.$router.push({name: 'file', params:{title:'서류'}});
+          break;
+        case 4:
+          this.$router.push({name: 'notification', params: {title:'공지'}});
+          break;
+        case 5:
+          this.$router.push({name:'tv', params: {title:'TV'}});
+          break;        
+      }
     },
   },
   beforeCreate(){},

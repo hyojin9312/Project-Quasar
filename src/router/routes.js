@@ -43,6 +43,16 @@ const routes = [
     ]
   },
 
+  //메뉴
+  {
+    path: '/menu',
+    component: () => import('layouts/MenuLayout.vue'),
+    children: [
+      //tv
+      {path: '/tv', name: 'tv', component: () => import('pages/Menu/Tv.vue')},
+    ]
+  },
+
   // Always leave this as last one,
   // but you can also remove it
   {

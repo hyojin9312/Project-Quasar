@@ -1,5 +1,5 @@
 <template>
-    <q-page class="full-width">
+    <q-page class="full-width bg-grey-2">
         <section class="q-pa-md">
             <q-card v-for="(item,index) in noticeList" :key="index" class="full-width q-mb-sm">
                 <q-expansion-item class="full-width">

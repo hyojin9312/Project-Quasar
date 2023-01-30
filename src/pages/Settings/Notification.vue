@@ -1,5 +1,5 @@
 <template>
-    <q-page class="bg-gery-2">
+    <q-page class="bg-grey-2">
         <!-- 알림 영역 -->
         <section class="q-pa-md">
             <div class="text-M text-weight-bolder">알림 설정</div>
