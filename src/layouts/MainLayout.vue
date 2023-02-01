@@ -190,13 +190,13 @@ export default {
           this.$router.push({name: 'notice', params: {title:'공지'}});
           break;
         case 3:
-          this.$router.push({name: 'file', params:{title:'서류'}});
+          this.$router.push({name: 'file', params:{title:'내 서류함'}});
           break;
         case 4:
           this.$router.push({name: 'notification', params: {title:'공지'}});
           break;
         case 5:
-          this.$router.push({name:'tv', params: {title:'TV'}});
+          this.$router.push({name: 'tv', params: {title:'TV'}});
           break;        
       }
     },

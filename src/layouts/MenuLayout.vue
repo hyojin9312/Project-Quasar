@@ -1,8 +1,8 @@
 <template>
-    <q-layout view="1Hh 1pr 1Ff">
+    <q-layout view="lHh lpr lFf">
         <!-- toolbar -->
         <q-header class="bg-primary shadow-2" v-if="isShowToolbar">
-            <q-toolbar class="full-width flex jusify-between items-center text-white">
+            <q-toolbar class="flex justify-between items-center text-white full-width">
                 <q-btn 
                     class="no-margin no-padding"
                     icon="keyboard_backspace"
@@ -13,8 +13,6 @@
                 <div class="text-h5 text-weight-bolder absolute-center">{{ getTitle }}</div>
             </q-toolbar>
         </q-header>
-
-        <!-- main -->
         <q-page-container>
             <router-view />
         </q-page-container>

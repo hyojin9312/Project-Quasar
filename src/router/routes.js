@@ -50,6 +50,8 @@ const routes = [
     children: [
       //tv
       {path: '/tv', name: 'tv', component: () => import('pages/Menu/Tv.vue')},
+      //파일
+      {path: '/file', name:'file', component: () => import('pages/Menu/File.vue')},
     ]
   },
 
