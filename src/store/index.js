@@ -3,6 +3,9 @@ import Vuex from 'vuex'
 
 import example from './module'
 
+import 'regenerator-runtime/runtime'
+
+
 Vue.use(Vuex)
 
 /*

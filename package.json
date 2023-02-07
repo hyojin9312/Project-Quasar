@@ -1,21 +1,30 @@
 {
   "name": "project-quasar",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
-  "author": "",
+  "description": "Quasar Project",
+  "productName": "Quasar Project",
+  "author": "hyojin9312",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider && quasar dev"
   },
   "dependencies": {
+    "@babel/runtime": "^7.20.13",
     "@quasar/extras": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "core-js": "^3.6.5",
-    "quasar": "^1.0.0"
+    "quasar": "^1.0.0",
+    "vue": "^2.7.14",
+    "vue-html2canvas": "^0.0.4",
+    "vue-signature-pad": "^1.1.17",
+    "vue-zoomer": "^0.3.6"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.0"
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@quasar/app": "^2.0.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0"
   },
   "browserslist": [
     "ie >= 11",
@@ -34,5 +43,4 @@
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }
-  
 }

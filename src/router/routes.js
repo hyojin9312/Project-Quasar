@@ -52,6 +52,10 @@ const routes = [
       {path: '/tv', name: 'tv', component: () => import('pages/Menu/Tv.vue')},
       //파일
       {path: '/file', name:'file', component: () => import('pages/Menu/File.vue')},
+      //이력서
+      {path: '/resume', name:'resume', component: () => import('pages/File/Resume.vue')},
+      //자기소개서
+      {path: '/myself', name: 'myself', component: () => import('pages/File/MySelf.vue')},
     ]
   },
 
